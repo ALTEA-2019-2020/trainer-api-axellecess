@@ -4,10 +4,7 @@ import com.miage.altea.trainer_api.bo.Trainer;
 import com.miage.altea.trainer_api.service.TrainerService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 @RestController
 @RequestMapping("/trainers")
@@ -28,5 +25,15 @@ public class TrainerController {
     @GetMapping("/{name}")
     Trainer getTrainer(@PathVariable String name){
         return trainerService.getTrainer(name);
+    }
+
+    @PostMapping("/")
+    Trainer addTrainer(@RequestBody Trainer trainer){
+        return trainerService.createTrainer(trainer);
+    }
+
+    @DeleteMapping("/{name}")
+    void deleteTrainer(@PathVariable String name){
+        trainerService.deleteTrainer(name);
     }
 }

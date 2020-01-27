@@ -27,4 +27,12 @@ public class TrainerServiceImpl implements  TrainerService{
     public Trainer createTrainer(Trainer trainer) {
         return trainerRepository.save(trainer);
     }
+
+
+    public void deleteTrainer(String name){
+        Trainer t = getTrainer(name);
+        if(t != null){
+            trainerRepository.delete(t);
+        }
+    }
 }
