@@ -8,11 +8,12 @@ Avec les endpoints :
 - /trainers/ => Pour récupérer tous les trainers
 - /trainers/{name} => Pour récupérer le trainer de nom name
 
-La sécurité est aussi mise en place sur ce projet. Voici les identifiants publics.
+La sécurité est aussi mise en place sur ce projet.
 <details>
   <summary>Identifiants publics</summary>
   
-  userName=user 
+  userName=user
+  
   password=4fca73f0-c17d-4039-9b85-a00197e2322a 
   
 </details>
