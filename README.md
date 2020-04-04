@@ -12,8 +12,9 @@ La sécurité est aussi mise en place sur ce projet.
 <details>
   <summary>Identifiants publics</summary>
   
+  ```javascript
   userName=user
-  
   password=4fca73f0-c17d-4039-9b85-a00197e2322a 
+  ```
   
 </details>
