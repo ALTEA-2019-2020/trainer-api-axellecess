@@ -18,3 +18,5 @@ La sécurité est aussi mise en place sur ce projet.
   ```
   
 </details>
+
+Il y a une collection Postman pour tester les fonctionnalités disponibles danx le dossier src/test/resources.
