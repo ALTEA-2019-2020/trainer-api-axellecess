@@ -1,5 +1,5 @@
 # Trainer API
-## Par Cess Axelle - M2 MIAGE FA
+### Par Cess Axelle - M2 MIAGE FA
 
 Ce projet est pour la gestion des objets de type "Trainer".
 Il est déployé sur Heroku, accessible à ce lien : https://trainer-api-juwit-cess.herokuapp.com.
