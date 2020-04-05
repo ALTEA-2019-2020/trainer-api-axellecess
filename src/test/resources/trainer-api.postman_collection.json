@@ -1,0 +1,112 @@
+{
+	"info": {
+		"_postman_id": "eced5a25-2628-404a-80d2-e09686e6e445",
+		"name": "trainer-api",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "getTrainerAsh",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "97fa0352-3e38-4ad3-b6c3-545bcb728628",
+						"exec": [
+							"pm.test(\"Ash\", function () {",
+							"    var ash = pm.response.json();",
+							"    pm.expect(ash.name).to.eq(\"Ash\");",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "4fca73f0-c17d-4039-9b85-a00197e2322a",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "user",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://trainer-api-juwit-cess.herokuapp.com/trainers/Ash",
+					"protocol": "https",
+					"host": [
+						"trainer-api-juwit-cess",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"trainers",
+						"Ash"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getAllTrainers",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "28cce79e-a590-403b-a616-781943069607",
+						"exec": [
+							"pm.test(\"all trainers\", function () {",
+							"    var jsonData = pm.response.json();",
+							"    pm.expect(jsonData.length).to.eq(2);",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "4fca73f0-c17d-4039-9b85-a00197e2322a",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "user",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://trainer-api-juwit-cess.herokuapp.com/trainers/",
+					"protocol": "https",
+					"host": [
+						"trainer-api-juwit-cess",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"trainers",
+						""
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
