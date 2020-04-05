@@ -1,8 +1,10 @@
-# trainer-api-axellecess
-trainer-api-axellecess created by GitHub Classroom
+# Trainer API
+## Par Cess Axelle - M2 MIAGE FA
 
 Ce projet est pour la gestion des objets de type "Trainer".
 Il est déployé sur Heroku, accessible à ce lien : https://trainer-api-juwit-cess.herokuapp.com.
+
+Il est aussi accessible localement au port **8081**.
 
 Avec les endpoints :
 - /trainers/ => Pour récupérer tous les trainers
